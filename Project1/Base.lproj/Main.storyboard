@@ -54,14 +54,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bzr-jg-775">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Bzr-jg-775">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="D0e-pV-Na4"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Bzr-jg-775" firstAttribute="centerY" secondItem="XTG-Db-OJx" secondAttribute="centerY" id="BTN-hd-6BR"/>
+                            <constraint firstItem="Bzr-jg-775" firstAttribute="centerX" secondItem="XTG-Db-OJx" secondAttribute="centerX" id="JCQ-ed-Uqe"/>
+                            <constraint firstItem="Bzr-jg-775" firstAttribute="top" secondItem="XTG-Db-OJx" secondAttribute="topMargin" constant="-59" id="U38-aF-xSH"/>
+                            <constraint firstItem="Bzr-jg-775" firstAttribute="leading" secondItem="D0e-pV-Na4" secondAttribute="leading" id="mlE-W7-RIM"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="Bzr-jg-775" id="M3g-qw-kni"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vWJ-On-iwF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

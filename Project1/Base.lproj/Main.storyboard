@@ -17,15 +17,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Picture" textLabel="Iwp-yF-9A8" style="IBUITableViewCellStyleDefault" id="KYt-Iv-B7S">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Picture" textLabel="Iwp-yF-9A8" style="IBUITableViewCellStyleDefault" id="KYt-Iv-B7S">
                                 <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KYt-Iv-B7S" id="UDz-vM-b43">
-                                    <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="362.66666666666669" height="43.666667938232422"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Iwp-yF-9A8">
-                                            <rect key="frame" x="20" y="0.0" width="353" height="43.666667938232422"/>
+                                            <rect key="frame" x="20" y="0.0" width="334.66666666666669" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
                                             <nil key="textColor"/>
@@ -54,17 +54,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Bzr-jg-775">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Bzr-jg-775">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="D0e-pV-Na4"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Bzr-jg-775" firstAttribute="centerY" secondItem="XTG-Db-OJx" secondAttribute="centerY" id="BTN-hd-6BR"/>
-                            <constraint firstItem="Bzr-jg-775" firstAttribute="centerX" secondItem="XTG-Db-OJx" secondAttribute="centerX" id="JCQ-ed-Uqe"/>
-                            <constraint firstItem="Bzr-jg-775" firstAttribute="top" secondItem="XTG-Db-OJx" secondAttribute="topMargin" constant="-59" id="U38-aF-xSH"/>
-                            <constraint firstItem="Bzr-jg-775" firstAttribute="leading" secondItem="D0e-pV-Na4" secondAttribute="leading" id="mlE-W7-RIM"/>
+                            <constraint firstAttribute="bottom" secondItem="Bzr-jg-775" secondAttribute="bottom" id="7Jp-H9-qgB"/>
+                            <constraint firstItem="Bzr-jg-775" firstAttribute="leading" secondItem="XTG-Db-OJx" secondAttribute="leading" id="9h8-uz-QUj"/>
+                            <constraint firstItem="Bzr-jg-775" firstAttribute="trailing" secondItem="D0e-pV-Na4" secondAttribute="trailing" id="AIm-qd-hge"/>
+                            <constraint firstAttribute="trailing" secondItem="Bzr-jg-775" secondAttribute="trailing" id="LZS-ZK-upL"/>
+                            <constraint firstItem="Bzr-jg-775" firstAttribute="top" secondItem="D0e-pV-Na4" secondAttribute="top" constant="-59" id="VEJ-25-v8O"/>
+                            <constraint firstAttribute="bottom" secondItem="Bzr-jg-775" secondAttribute="bottom" id="fd4-JG-cPj"/>
+                            <constraint firstItem="Bzr-jg-775" firstAttribute="leading" secondItem="D0e-pV-Na4" secondAttribute="leading" id="ft2-Zf-pWx"/>
                         </constraints>
                     </view>
                     <connections>
@@ -78,13 +81,17 @@
         <!--Navigation Controller-->
         <scene sceneID="C0x-CW-zVA">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Atu-5y-OGY" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" toolbarHidden="NO" id="Atu-5y-OGY" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="h3z-H1-v9e">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ebq-E9-BVf">
+                        <rect key="frame" x="0.0" y="769" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="0pC-a4-gT7" kind="relationship" relationship="rootViewController" id="ctl-vF-Bdb"/>
                     </connections>
